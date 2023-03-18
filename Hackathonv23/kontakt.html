@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Gong Express</title>
+</head>
+<body>
+    <nav>
+        <ul class="flex">
+            <li><a  href="index.html">Hjem</a></li>
+            <li><a href="meny.html">Meny</a></li>
+            <li><a href="kontakt.html">Kontakt oss</a></li>
+        </ul>
+    </nav>   
+
+    <main class="flex">
+        <section>
+
+            <form id="contactForm" class="form">
+              <h2>Ta kontakt med oss</h2>
+                <div class="form-field">
+                  <label for="fname">Fornavn:</label><br>
+                  <input type="text" id="fname" name="fname" placeholder="Ola"><br>
+                </div>
+
+                <div class="form-field">
+                  <label for="lname">Etternavn:</label><br>
+                  <input type="text" id="lname" name="lname" placeholder="Nordmann"><br>
+                </div>
+
+                <div class="form-field">
+                  <label for="age">Alder:</label><br>
+                  <input type="number" id="age" name="age" placeholder="18"><br>
+                </div>
+
+                <div class="form-field">
+                  <label for="telnr">Mobilnummer:</label><br>
+                  <input type="tel" id="telnr" name="telnr" placeholder="+47 123 45 678"><br><br>
+                </div>
+
+                  <div class=" form-field buttons">
+                    <input  type="submit" value="Send inn">
+                    <input  type="reset" value="Tilbakestill">
+                  </div>
+              </form>
+        </section>
+
+        <section>
+            <h3>Finn oss!</h3>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1690.72461125643!2d10.199340406965703!3d59.73910903532788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46413cb35adf1d57%3A0x119edc51c54a8ca4!2sDynastiet%20restaurant%20AS!5e0!3m2!1sno!2sno!4v1679096005928!5m2!1sno!2sno"></iframe>            
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="flex">
+        <p>Hackathon Prosjekt Vår 2023</p>
+        <p>Marius Jølsen Lindberg</p>
+        <p>18.03.2023</p>
+        <p><a href="tel:+12 345 67 890">+12 345 67 890</a></p>
+    </footer> 
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid greenyellow;*/
+}
+
+
+p{
+    font-size: 24px;
+}
+
+h2, h3, h4 {
+    font-size: 26px;
+}
+
+body {
+    background-color:#f5b609;
+}
+
+.flex {
+    display: flex;
+}
+
+nav {
+    background-image:url(../img/bg\ pattern.avif);
+    padding: 25px 0px;
+    border-bottom: 2px solid #451800;
+}
+
+    nav ul {
+        justify-content: space-evenly;
+    }
+
+        nav li {
+            list-style-type: none;
+        }
+
+        nav a {
+            padding: 5px 10px;
+            border-bottom: 1px solid #451800;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+            nav a:hover {
+                color: #f5b609;
+                box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.452);
+
+            }
+
+header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    position: absolute;
+    top: 15vh;
+    text-align: center;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+}
+
+    .logo h1 {
+        padding: 10px 15px;
+        background-color: #6b2500;
+        border: 1px solid black;
+        border-radius: 0px 0px 200px 200px;
+        color: #f5b609;
+        -webkit-text-stroke:1px black;
+    }
+
+main {
+    width: 100%;
+    text-align: center;
+    background-color: #f5b609;
+
+    padding: 5% 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    section {
+        flex-direction:column;
+        height: 100%;
+        max-width: 33%;
+    }
+
+        /*Slideshow styling*/
+        .slideshow-container{
+            max-width: 100%;
+            max-height: 85vh;
+            overflow: hidden;
+        }
+
+            .slide {
+                display: none;
+            }
+
+            .slide img {
+                width: 100vw;
+                animation-fill-mode: forwards;
+                filter: blur(5px);
+            }
+
+            .map iframe{
+                width: 600px; height:450px; 
+                border:1px solid black; 
+            }
+        
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 2vh 0;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: #451800;
+    color: #f5b609;
+    -webkit-text-stroke:1px black;
+
+}
+
+    footer a {
+        text-decoration: none;
+        color: #f5b609;
+    }
+
+/*Form styling*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+    .form-field {
+        padding: 5px 0;
+    }
+
+        input {
+            padding: 6% 10%;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+
+            .buttons {
+                justify-content: space-between;
+            }
+
+                .buttons input {
+                    cursor: pointer;
+
+                }
+
+/*table design hvis jeg lever*/
+
+table {
+    padding: 10px;
+    width: 100%;
+}
+
+th, tr, td {
+    border-bottom: 1px solid black;
+    padding: 15px 10px 10px ;
+
+}
+
+/*Simpel logo fadein*/
+@keyframes fadein {
+    from {
+        opacity: 0;
+        top: 16vh; 
+    }
+    to {
+        opacity: 1;
+        top: 15vh;
+    }
+}
+
+
+
+
+
